@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unreal Zombies Framework</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Unreal Zombies Framework</h1>
+    <a href="index.html">← Back to Portfolio</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Project</h2>
+      <p>Created a complete gameplay framework that extends the UE5 variant shooter template, including enemy AI, rebuildable barricades, purchaseable wall weapons and ammo, a mystery box, powerup drops, and melee and grenade mechanics.</p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+
+      <!-- Feature Card 1 -->
+      <div class="feature-card">
+        <img src="images/project1-feature1.jpg" alt="Enemy AI System">
+        <div class="feature-text">
+          <h3>Zombie Enemy AI</h3>
+          <p>I used UE5 state trees to implement Zombie AI. Each enemy spawnpoint has a set barricade, so zombies spawn and while they are outside of the level, their main task is to approach, break, and enter their assigned barricade.
+            After entering, they are now inside the level so they can chase the player. No matter success or fail, they will always chase player until they are close enough to attack, then attack, then repeat.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="feature-card">
+        <img src="barricadeclip1.gif" alt="Barricade System">
+        <div class="feature-text">
+          <h3>Barricade System</h3>
+          <p>Each barricade has invisible planes on the inside and outside of level, so zombies move to the outside plane, when the barricade is broken they can move to the inside pane. Barricades can be rebuilt by player, and award
+            points for doing so. Planes are visible here just so you can see how it works.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="feature-card">
+        <img src="boxgif1.gif" alt="Mystery Box">
+        <div class="feature-text">
+          <h3>Mystery Box</h3>
+          <p>Mystery Box is a child class of my purchaseable class, if player can interact and has enough money to purchase box, it will subtract money and choose a weapon. It checks player owned weapons, and removes them from the 
+            available weapon array, to avoid duplicates. After it chooses a weapon, opens the lid, and spawns it, you have the opportunity to secondary interact, swapping your current weapon with the box weapon. Alternatively, if you
+            don't want this gun, you can just wait and it will close itself and reset.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <img src="images/project1-1.jpg" alt="Screenshot of Project 1" width="600">
+    </section>
+
+    <main>
+    <h2>Videos</h2>
+    <div class="video-container">
+        <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Demo Reel" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    </main>
+  </main>
+</body>
+</html>

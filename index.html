@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noah Fullerton — Game Programming Portfolio</title>
+  <meta name="description" content="Portfolio of Noah Fullerton — game programmer specializing in Unreal Engine, gameplay systems, and tools." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Noah Fullerton</h1>
+    <p>Game Programmer — Gameplay, Tools & Systems</p>
+  </header>
+
+  <!-- Demo reel-->
+    <main>
+    <h2>Demo Reel</h2>
+    <div class="video-container">
+        <iframe 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Demo Reel" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    </main>
+   <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="ZombiesScreenshot1.png" alt="Call of Duty Zombies Framework">
+          <h3>Call of Duty Zombies Framework</h3>
+          <p>Created a complete gameplay framework that extends the UE5 variant shooter template, including enemy AI, rebuildable barricades, purchaseable wall weapons and ammo, 
+            a mystery box, powerup drops, and melee and grenade mechanics.</p>
+          <div class="project-links">
+            <a href="https://github.com/noah-fullerton/UE5ZombieFramework" target="_blank">Downloadable Demo</a>
+            <a href="https://youtu.be/demo1" target="_blank">Video</a>
+            <a href="project1.html" target=""_blank">Read More</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/level_generator.jpg" alt="Minecraft-like Inventory System">
+          <h3>Minecraft-like Inventory System</h3>
+          <p>Created a custom inventory system, with a hotbar that responds to numpad keys and mouse scroll wheel, full inventory binded to the I key that allows reorganizing, 
+            and an item pickup system that dynamically fills empty slots.</p>
+          <div class="project-links">
+            <a href="https://github.com/yourgithub/level-generator" target="_blank">Code</a>
+            <a href="https://youtu.be/demo2" target="_blank">Video</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <main>
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a game programmer with a passion for building gameplay systems, tools, and interactive experiences.
+        I specialize in Unreal Engine (C++ and Blueprints) and have experience with Unity, C#, and Python scripting.
+        My goal is to create memorable and polished player experiences through thoughtful systems design and technical creativity.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact & Links</h2>
+      <p>Feel free to reach out or explore my work:</p>
+      <div class="contact-links">
+        <a href="mailto:noahmfullerton@gmail.com">📧 Email</a>
+        <a href="https://github.com/noah-fullerton" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/noah-fullerton-a0748326a/" target="_blank">🔗 LinkedIn</a>
+        <!--<a href="https://itch.io" target="_blank">🎮 Itch.io</a>
+        <a href="resume.pdf" download>📄 Resume</a> -->
+      </div>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    © <span id="year"></span> Noah Fullerton — All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
